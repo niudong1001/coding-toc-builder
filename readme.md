@@ -1,7 +1,20 @@
-## 使用说明
+## codingDocBuilder
+> 此仓库用以生成符合coding格式的前置索引列表
 
-1. 安装nodejs
-2. 安装npm
-3. 安装doctoc（sudo npm install doctoc）
-4. chmod a+x format.sh;
-5. ./format.sh ../console.md
+## 使用
+```sh
+npm intsall  # 安装依赖库
+chmod a+x foformat.sh  # 为sh增加执行权限
+./format.sh  path/target.md  # 格式化文档
+```
+
+## 生成页内变量快速索引说明
+```md
+// 链接到的目标对象
+## news
+{
+  ...
+}
+// 期待发起链接的源对象写法
+[news](#news)
+```
