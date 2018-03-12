@@ -13,8 +13,7 @@ program
   .parse(process.argv);
 //console.log(' chdir - %s ', program.files);
 console.log("\n");
-console.log("正在格式化为coding.net markdown格式。。。");
-console.log("==================");
+console.log("准备格式化为coding.net markdown格式。。。");
 fs.exists(program.files,(exists)=>{
 	if(exists){
 		fs.readFile(program.files,"utf-8",(err,data)=>{
